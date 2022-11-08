@@ -1,18 +1,18 @@
 const express= require('express');
 const app=express();
 const bobyParser=require('body-parser')
-
+const cors = require("cors")
 
 app.use(bobyParser.urlencoded({extended: false}))
 app.use(bobyParser.json())
-
+app.use(cors())
 var DB={
     agenda:[
         {
             id:1,
             titulo:'academia',
             descricao:'treinar uma vez por dia',
-            data:'10/03/20',
+            
         },
         {
             id:2,

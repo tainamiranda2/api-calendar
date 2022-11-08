@@ -1,0 +1,1 @@
+#npm i para instalar tudo qur precisa
